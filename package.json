@@ -1,0 +1,14 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "contains descriptions of dependensies",
+  "main": "try.js",
+  "scripts": {
+    "start": "node try.js",
+    "dev": "nodemon try.js",
+    "build": "webpack",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>trying something in JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="try.css">
+</head>
+
+<body>
+    <header>
+		<h1>Website</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+        <div class="search-box">
+            <input type="search" placeholder="Search...">
+            <button type="submit">Search</button>
+          </div>
+	</header>
+    <script src="try.js"> </script>
+    <h4>
+        Debugging demonstrations using Debugger keyword
+    </h4>
+    <!-- <style>
+    .styled-input {
+        background-color: #f2f2f2;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+    </style> -->
+    The solution of 20 * 5 is:
+    <p id="test"></p>
+    <p id="lm">
+        If the debugger is turned on the code stops
+        execution at the start of the debugger
+    </p>
+    <hr />
+    <div style="background-color:white ;text-align: center;" >
+        <h2>
+            Alert Function
+        </h2>
+        <p >
+            if you want to know what an alert is click on the below click here button 
+        </p>
+        <input id="alert-button"style="background-color: #55836e77; padding: 5px; border: 1px; border-radius: 2px; solid: #ccc;" type="button" value="click here" onclick="msg()"/>  
+        <br />
+        <br />
+
+    </div>
+    <div class="output-box">
+        <br />
+        <pre id="output"> 
+        To do the following below operations enter the respective values : <br />
+         1. view data of all users <br />
+         2. add a new user <br />
+         3. count of users <br />
+         4. latest user added <br />
+         5. remove last user <br />
+        To chose the above operations click on the below button and enter corresponding value <br /> <br />
+        <input id="alert-button"style="background-color: #55836e77; padding: 5px; border: 1px ; border-radius: 2px; " type="button" value="click here" onclick="sel()"/>
+    </pre>
+    </div>
+    <div id="container">
+        <p>
+            click here to view data of all users
+        </p>
+        <input id="alert-button"style="background-color: #55836e77; padding: 5px; border: 1px; border-radius: 2px; solid: #ccc;" type="button" value="click here" onclick="viewall()"/>
+    </div>
+    <p> 
+        To add a new user :
+    </p>
+    <input id="alert-button"style="background-color: #55836e77; padding: 5px; border: 1px; border-radius: 2px; solid: #ccc;" type="button" value="click here" onclick="addnew()"/>
+    <div id="count">
+        <p> 
+            To find the count of users :
+        </p>
+        <input id="alert-button"style="background-color: #55836e77; padding: 5px; border: 1px; border-radius: 2px; solid: #ccc;" type="button" value="click here" onclick="count()"/>
+    </div>
+    <div id="latest">
+        <p> 
+            To find the latest element added see below :
+        </p>
+        <input id="alert-button"style="background-color: #55836e77; padding: 5px; border: 1px; border-radius: 2px; solid: #ccc;" type="button" value="click here" onclick="latest()"/>
+    </div>
+    <div id="dellast">
+        <p> 
+            To delete the last input click below :
+        </p>
+        <input id="alert-button"style="background-color: #55836e77; padding: 5px; border: 1px; border-radius: 2px; solid: #ccc;" type="button" value="click here" onclick="dellast()"/>
+    </div>
+    
+        <br />
+        <hr />
+</body>
+
+</html>
