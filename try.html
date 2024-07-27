@@ -22,22 +22,6 @@
           </div>
 	</header>
     <script src="try.js"> </script>
-    <h4>
-        Debugging demonstrations using Debugger keyword
-    </h4>
-    <!-- <style>
-    .styled-input {
-        background-color: #f2f2f2;
-        padding: 10px;
-        border: 1px solid #ccc;
-    }
-    </style> -->
-    The solution of 20 * 5 is:
-    <p id="test"></p>
-    <p id="lm">
-        If the debugger is turned on the code stops
-        execution at the start of the debugger
-    </p>
     <hr />
     <div style="background-color:white ;text-align: center;" >
         <h2>
@@ -56,45 +40,46 @@
         <pre id="output"> 
         To do the following below operations enter the respective values : <br />
          1. view data of all users <br />
-         2. add a new user <br />
-         3. count of users <br />
-         4. latest user added <br />
-         5. remove last user <br />
+         2. count of users <br />
+         3. latest user added <br />
+         4. remove last user <br />
         To chose the above operations click on the below button and enter corresponding value <br /> <br />
-        <input id="alert-button"style="background-color: #55836e77; padding: 5px; border: 1px ; border-radius: 2px; " type="button" value="click here" onclick="sel()"/>
-    </pre>
-    </div>
-    <div id="container">
-        <p>
-            click here to view data of all users
-        </p>
-        <input id="alert-button"style="background-color: #55836e77; padding: 5px; border: 1px; border-radius: 2px; solid: #ccc;" type="button" value="click here" onclick="viewall()"/>
-    </div>
-    <p> 
+
+        Enter value below :
+        <input type="number" id="input-value" placeholder="Enter a value">
+        <input id="alert-button"style="background-color: #55836e77; padding: 5px; border: 1px ; border-radius: 2px; " type="button" value="submit" onclick="sel()"/>
+
         To add a new user :
-    </p>
-    <input id="alert-button"style="background-color: #55836e77; padding: 5px; border: 1px; border-radius: 2px; solid: #ccc;" type="button" value="click here" onclick="addnew()"/>
+
+        <input id="open-slider"style="background-color: #55836e77; padding: 5px; border: 1px ; border-radius: 2px; " type="button" value="submit" onclick="addnew()"/>
+        </pre>
+    </div>
+    <!-- <button id="open-slider">Open Slider</button> -->
+    <div id="slider" class="slider">
+        <!-- Slider content -->
+        <div class="slider-content">
+          <h2>Slider Form</h2>
+          <form>
+            <input type="text" id="name" placeholder="Name">
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="pass" placeholder="Password">
+            <br />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    <div id="container">
+    </div>
     <div id="count">
-        <p> 
-            To find the count of users :
-        </p>
-        <input id="alert-button"style="background-color: #55836e77; padding: 5px; border: 1px; border-radius: 2px; solid: #ccc;" type="button" value="click here" onclick="count()"/>
     </div>
     <div id="latest">
-        <p> 
-            To find the latest element added see below :
-        </p>
-        <input id="alert-button"style="background-color: #55836e77; padding: 5px; border: 1px; border-radius: 2px; solid: #ccc;" type="button" value="click here" onclick="latest()"/>
     </div>
     <div id="dellast">
-        <p> 
-            To delete the last input click below :
-        </p>
-        <input id="alert-button"style="background-color: #55836e77; padding: 5px; border: 1px; border-radius: 2px; solid: #ccc;" type="button" value="click here" onclick="dellast()"/>
     </div>
     
         <br />
         <hr />
+        <script src="./try.js"> </script>
 </body>
 
 </html>

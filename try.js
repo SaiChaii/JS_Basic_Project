@@ -22,6 +22,7 @@ window.onload = function()
     document.getElementById("test").innerHTML = z;
 };
 
+
 function msg(){  
     alert("Hello This is an Alert Box");  
    } 
@@ -46,7 +47,9 @@ function msg(){
 
    function sel()
    {
-        const t=prompt("Enter values between 1 to 5");
+        //const t=prompt("Enter values between 1 to 5");
+        const t = document.getElementById('input-value').value;
+//console.log(inputValue);
         console.log(typeof(t));
         switch(t)
         {
@@ -54,15 +57,12 @@ function msg(){
                 viewall();
                 break;
             case "2":
-                addnew();
-                break;
-            case "3":
                 count();
                 break;
-            case "4":
+            case "3":
                 latest();
                 break;
-            case "5":
+            case "4":
                 dellast();
                 break;
             default:
@@ -72,13 +72,25 @@ function msg(){
         
    }
 
+
    function addnew()
    {
-       let Name = prompt("Please enter your name:");
-       let Age = prompt("Please enter your age:");
+    console.log("Hi");
+    const slider = document.getElementById('slider');
+    const openSliderBtn = document.getElementById('open-slider');
+    
+    openSliderBtn.addEventListener('click', () => {
+        console.log("0");
+    slider.classList.toggle('open');
+    });
+    console.log("1");
+    const Name = document.getElementById('name').value;
+    console.log(inputValue);
+    const Email = document.getElementById('email').value;
+    console.log(inputValue);
+    const pass = document.getElementById('pass').value;
+    console.log(inputValue);
        let p1 =new person(Name,Age);
-       console.log(p1.name);
-       console.log(p1.age);
        data.push(p1);
    }
 
